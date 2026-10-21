@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c111c">
+  <meta name="description" content="Jesús Sierra is an independent software developer working on backend systems, applied AI, quantitative research, and trading technology.">
+  <meta property="og:title" content="Jesús Sierra — Software Engineering & Applied AI">
+  <meta property="og:description" content="Independent software development, AI systems, and quantitative research.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jesussierra.github.io/">
+  <title>Jesús Sierra — Software Engineering & Applied AI</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0c111c; --surface:#121a29; --surface2:#182334; --ink:#f3f7fc; --muted:#a1aec1; --line:#283649; --accent:#7ae4c6; --accent2:#80aaff; }
+    * { box-sizing:border-box }
+    html { scroll-behavior:smooth }
+    body { margin:0; color:var(--ink); background:radial-gradient(ellipse 75% 38% at 68% 0%,rgba(49,110,128,.22),transparent 80%),var(--bg); font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; -webkit-font-smoothing:antialiased }
+    a { color:inherit; text-decoration:none }
+    a:focus-visible { outline:2px solid var(--accent); outline-offset:4px; border-radius:3px }
+    .wrap { width:min(1100px,calc(100% - 48px)); margin-inline:auto }
+    .nav { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:30px 0; border-bottom:1px solid var(--line) }
+    .identity { display:flex; gap:12px; align-items:center; font-weight:750; letter-spacing:-.03em; font-size:18px }
+    .monogram { width:36px; height:36px; display:grid; place-items:center; border:1px solid rgba(122,228,198,.4); border-radius:11px; background:rgba(122,228,198,.08); color:var(--accent); font-size:13px; letter-spacing:-.08em }
+    .links { display:flex; flex-wrap:wrap; gap:24px; font-size:14px; color:var(--muted) }
+    .links a:hover,.textlink:hover { color:var(--accent) }
+    .hero { padding:105px 0 100px; max-width:850px }
+    .eyebrow { text-transform:uppercase; color:var(--accent); letter-spacing:.19em; font-size:12px; font-weight:750 }
+    h1,h2,h3,p { margin-top:0 }
+    h1 { font-size:clamp(45px,7.6vw,82px); line-height:1.075; letter-spacing:-.062em; font-weight:760; margin:18px 0 27px }
+    .gradient { background:linear-gradient(95deg,var(--accent),var(--accent2)); background-clip:text; -webkit-background-clip:text; color:transparent }
+    .lead { max-width:670px; font-size:clamp(18px,2.3vw,21px); color:var(--muted); line-height:1.65 }
+    .actions { display:flex; gap:14px; flex-wrap:wrap; margin-top:36px }
+    .btn { display:inline-flex; align-items:center; gap:10px; justify-content:center; min-height:46px; padding:10px 21px; border-radius:10px; font-weight:650; font-size:14px; transition:transform .15s,background .15s }
+    .btn:hover { transform:translateY(-2px) }
+    .primary { color:#09231d; background:var(--accent) }
+    .primary:hover { background:#a0efd9 }
+    .secondary { border:1px solid var(--line); color:var(--ink); background:rgba(255,255,255,.02) }
+    .secondary:hover { background:var(--surface2) }
+    section { padding:38px 0 86px }
+    .section-top { display:flex; align-items:baseline; justify-content:space-between; gap:18px; margin-bottom:30px; flex-wrap:wrap }
+    .section-top h2 { letter-spacing:-.04em; font-size:clamp(27px,3.8vw,38px); line-height:1.2; margin:0 }
+    .section-top p { color:var(--muted); max-width:520px; margin:0 }
+    .cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px }
+    .card { background:linear-gradient(160deg,rgba(24,35,52,.9),rgba(18,26,41,.97)); border:1px solid var(--line); border-radius:16px; padding:27px; min-height:270px }
+    .card .number { color:var(--accent); font-size:13px; font-weight:750; letter-spacing:.1em }
+    .card h3 { font-size:21px; line-height:1.28; letter-spacing:-.025em; margin:31px 0 14px }
+    .card p { color:var(--muted); font-size:15px; margin:0 }
+    .note { color:var(--muted); border-left:2px solid var(--accent); padding:2px 0 2px 22px; max-width:760px; margin:8px 0 0 }
+    .about { display:grid; grid-template-columns:1.3fr 1fr; gap:50px; align-items:start }
+    .about p { color:var(--muted); max-width:650px }
+    .chips { display:flex; gap:9px; flex-wrap:wrap; align-content:start }
+    .chip { border:1px solid var(--line); background:var(--surface); padding:7px 13px; border-radius:8px; color:#c4d1e1; font-size:13px }
+    .bottom { border-top:1px solid var(--line); padding:32px 0 42px; display:flex; justify-content:space-between; gap:20px; color:var(--muted); font-size:13px; flex-wrap:wrap }
+    .textlink { color:var(--ink); text-decoration:underline; text-decoration-color:var(--line); text-underline-offset:4px }
+    @media(max-width:760px){ .nav{align-items:flex-start} .links{gap:12px} .hero{padding:72px 0 66px} .cards{grid-template-columns:1fr} .card{min-height:auto} .card h3{margin-top:20px} .about{grid-template-columns:1fr;gap:18px} section{padding:28px 0 62px} }
+    @media(max-width:460px){ .wrap{width:min(100% - 32px,1100px)} .nav{flex-direction:column;align-items:flex-start} }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}.btn:hover{transform:none}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav">
+      <a class="identity" href="/" aria-label="Jesús Sierra, home"><span class="monogram">JS</span><span>Jesús Sierra</span></a>
+      <nav class="links" aria-label="Main navigation">
+        <a href="#work">Focus areas</a><a href="#about">About</a><a href="https://github.com/JesusSierra" rel="me noopener noreferrer">GitHub ↗</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="eyebrow">Independent software developer · Engineering & research</div>
+        <h1>Building software.<br><span class="gradient">Exploring intelligence.</span></h1>
+        <p class="lead">I'm Jesús Sierra. I work on backend engineering, applied AI, and systematic research — building practical, testable systems at the intersection of software and automation.</p>
+        <div class="actions">
+          <a class="btn primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="btn secondary" href="https://github.com/JesusSierra" rel="me noopener noreferrer">View GitHub profile <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <section id="work" aria-labelledby="work-heading">
+        <div class="section-top">
+          <h2 id="work-heading">Areas of focus</h2>
+          <p>Independent projects built around reliable execution, measurable results, and thoughtful engineering.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="number">01 / RESEARCH</div>
+            <h3>Algorithmic Trading Research</h3>
+            <p>Experimenting with systematic strategies, broker APIs, historical data, risk controls, and automated trading infrastructure in demo environments. Results are evaluated critically, not assumed.</p>
+          </article>
+          <article class="card">
+            <div class="number">02 / ENGINEERING</div>
+            <h3>Backend & SAP Systems</h3>
+            <p>Designing integrations, business workflows, APIs, and backend software, including SAP ABAP development and enterprise-oriented engineering.</p>
+          </article>
+          <article class="card">
+            <div class="number">03 / APPLIED AI</div>
+            <h3>AI & Autonomous Agents</h3>
+            <p>Exploring local models, retrieval systems, orchestration, and agent workflows with a focus on observability, safety boundaries, and real-world usefulness.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" aria-labelledby="about-heading">
+        <div class="about">
+          <div>
+            <div class="section-top"><h2 id="about-heading">Built to be understood.</h2></div>
+            <p>My approach is to separate research from production, test assumptions before deployment, and make software observable and maintainable. I am especially interested in connecting Python-based research and AI tooling with robust execution systems.</p>
+            <p class="note"><strong>Trading research disclosure:</strong> This site describes personal software and research projects. It does not offer investment services, trading signals, or promises of financial performance.</p>
+          </div>
+          <div class="chips" aria-label="Areas and tools">
+            <span class="chip">Python</span><span class="chip">Backend APIs</span><span class="chip">SAP ABAP</span><span class="chip">AI Agents</span><span class="chip">Local AI</span><span class="chip">Data Research</span><span class="chip">Automation</span><span class="chip">Risk Controls</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bottom">
+      <span>© <span id="year">2026</span> Jesús Sierra · Independent developer</span>
+      <span>Contact / projects: <a class="textlink" href="https://github.com/JesusSierra" rel="me noopener noreferrer">github.com/JesusSierra</a></span>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
